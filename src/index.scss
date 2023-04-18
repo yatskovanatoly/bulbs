@@ -26,7 +26,7 @@ body {
 
 .bulbs-container {
   display: grid;
-  grid-template-columns: repeat(5, 20px);
+  grid-template-columns: repeat(4, 20px);
   grid-template-rows: repeat(6, 20px);
   margin: 5px;
 
@@ -41,7 +41,8 @@ body {
   }
   
   .bulb.active {
-    background-color: yellowgreen;
+    background-color: lightgreen;
+    // background-color: yellowgreen;
     box-shadow: 0 0 10px 5px green;
   }
 }
