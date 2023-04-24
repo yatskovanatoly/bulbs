@@ -53,6 +53,18 @@ export const patterns = {
       1,1,1,1,
       1,0,0,1,
       1,0,0,1],
+  O: [0,1,1,0,
+      1,0,0,1,
+      1,0,0,1,
+      1,0,0,1,
+      1,0,0,1,
+      0,1,1,0],
+  T: [1,1,1,1,
+      1,1,1,1,
+      0,1,1,0,
+      0,1,1,0,
+      0,1,1,0,
+      0,1,1,0],
 };
 
 export const PatternSelector = ({ onPatternSelect }) => {
@@ -72,7 +84,7 @@ const handleInputChange = (event) => {
 
 return (
   <div className="input">
-    <input type="text" id="pattern-input" maxLength={4} onChange={handleInputChange} />
+    <input type="text" id="pattern-input" maxLength={100} onChange={handleInputChange} />
   </div>
 );
 };
