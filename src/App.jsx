@@ -7,20 +7,16 @@ const App = () => {
 		Array(4).fill(patterns[''])
 	)
 
-	const handlePatternSelect = (patternToHandle) => {
-		setSelectedPattern(patternToHandle)
-	}
-
 	console.log(selectedPattern)
 	return (
-		<>
+		<div className='container'>
 			<div className='screen-container'>
 				{selectedPattern.map((el) => (
 					<Bulbs pattern={el} />
 				))}
 			</div>
-			<PatternSelector onPatternSelect={handlePatternSelect} />
-		</>
+			<PatternSelector onPatternSelect={setSelectedPattern} />
+		</div>
 	)
 }
 
